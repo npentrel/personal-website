@@ -58,8 +58,9 @@ a:hover, a:active {
   margin-bottom: .3rem;
 }
 .value-description {
-  opacity: .8;
-  font-weight: 300;
+  padding-top: 3rem;
+  font-size: 1.6rem;
+  font-weight: 100;
 }
 
 .highlight {
@@ -92,6 +93,6 @@ a:hover, a:active {
 /* Bigger than 1000 */
 @media (min-width: 1000px) {
   .section {
-    padding: 18rem 0 5rem;
+    padding: 15rem 0 2rem;
   }
 }
