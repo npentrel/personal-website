@@ -29,6 +29,10 @@ a:hover, a:active {
     color: rgba(0, 0, 255, 1);
 }
 
+a {
+   font-weight: 500;
+}
+
 .over img:first-child{display:inline-block}
 .over img:nth-child(2){display:none}
 .over:hover img:first-child{display:none}
