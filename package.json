@@ -1,0 +1,9 @@
+{
+  "name": "personal-website-naomi-codes",
+  "description": "Personal Website",
+  "version": "0.2",
+  "dependencies": {
+    "imagemin": "^5.2.2",
+    "name": "imagemin"
+  }
+}
