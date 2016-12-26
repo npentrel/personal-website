@@ -3,7 +3,6 @@
   "description": "Personal Website",
   "version": "0.2",
   "dependencies": {
-    "imagemin": "^5.2.2",
-    "name": "imagemin"
+    "html-minifier": "^3.2.3",
   }
 }

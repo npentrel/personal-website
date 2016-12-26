@@ -6,4 +6,4 @@
 4. Run server `python server.py`
 
 # server side
-`alias websiteupdate='(killall gunicorn; git pull; htmlminify static/index_verbose.html > static/index.html; gunicorn server:app -b 146.185.137.172:80 --access-logfile access.txt &)'`
+`alias websiteupdate='(killall gunicorn; git pull; wget --post-data="input=`cat static/styles/custom.css`" --output-document=custom.min.css https://cssminifier.com/raw;  htmlminify index_verbose.html > index.html; gunicorn server:app -b 146.185.137.172:80 --access-logfile access.txt &)'`
