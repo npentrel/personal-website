@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Analytics</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+    <style type="text/css">
+      body {
+        font-family: monospace;
+        font-size: 14px;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      table {
+        margin: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <table class="u-full-width">
+      <thead>
+        <tr>
+          {% for column in columns %}
+            <th>{{ column }}</th>
+          {% endfor %}
+        </tr>
+      </thead>
+      <tbody>
+        {% for row in data %}
+          <tr>
+            {% for entry in row %}
+              {% if loop.last %}
+              <td><a href="/analytics/{{ entry }}">{{ entry }}</a></td>
+              {% else %}
+              <td>{{ entry }}</td>
+              {% endif %}
+            {% endfor %}
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </body>
+</html>

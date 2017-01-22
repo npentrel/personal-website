@@ -149,7 +149,28 @@
         </div>
       </div>
     </div>
-
+    <footer>
+        <img class="pixel" src="http://146.185.137.172:80/me.png" alt="" width="1" height="1" border="0">
+    </footer>
+    <script type="text/javascript">
+        function post(source) {
+          var http = new XMLHttpRequest();
+          var url = "http://146.185.137.172:80/a/" + source;
+          http.open("POST", url, true);
+          http.send();
+        }
+        (function(){
+          var links = document.getElementsByTagName("a");
+          for (var i = 0; i < links.length; i++) {
+            links[i].onclick = function(e) {
+              post(this.host);
+            }
+          }
+        })();
+    </script>
+  </div>
+</body>
+</html>
 
   </body>
   </html>
