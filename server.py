@@ -24,7 +24,7 @@ def track(source):
   os = user_agent.platform
   browser = user_agent.browser
 
-  cet = datetime.now(pytz.timezone('Europe/Berlin'))
+  cet = datetime.now(pytz.timezone('Europe/London'))
   time = cet.strftime("%d.%m.%Y %H:%M:%S")
   data = [time, city, country, ip, os, browser, source]
   data = map(str, data)
@@ -35,7 +35,7 @@ def track(source):
 @app.route('/<source>.png')
 def pixel(source):
   track(source)
-  return send_file('assets/profile.png')
+  return send_file('profile.png')
 
 
 @app.route('/a/<source>', methods=['POST'])
