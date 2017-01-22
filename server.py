@@ -35,7 +35,7 @@ def track(source):
 @app.route('/<source>.png')
 def pixel(source):
   track(source)
-  return send_file('profile.png')
+  return send_file('assets/profile.png')
 
 
 @app.route('/a/<source>', methods=['POST'])
