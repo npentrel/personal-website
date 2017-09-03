@@ -66,6 +66,28 @@ a {
   margin-bottom: 1.2rem;
 }
 
+/* Values
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.values {
+  background-image: url('../images/values-bg.jpg');
+  background-size: cover;
+  color: #fff;
+  padding-bottom: 5rem;
+  padding-top: 5rem;
+}
+.value-multiplier {
+  margin-bottom: .5rem;
+  color: rgba(0, 0, 255, 0.5);
+}
+.value-heading {
+  margin-bottom: .3rem;
+}
+.value-description {
+  padding-top: 3rem;
+  font-size: 1.6rem;
+  font-weight: 100;
+}
+
 .highlight {
     color: rgba(0, 0, 255, 0.5);
 }
