@@ -44,10 +44,10 @@ def link(source):
   return ('', 204)
 
 
-@app.route('/analyt1cs')
-def analytics():
-  return render_table()
-
+# @app.route('/analyt1cs')
+# def analytics():
+#   return render_table()
+#
 
 @app.route('/analyt1cs/<source>')
 def filtered_analytics(source):
